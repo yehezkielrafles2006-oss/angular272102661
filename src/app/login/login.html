@@ -1,0 +1,58 @@
+<main class="login-box" id="main" tabindex="-1">
+  <h1 class="login-logo">
+    <a routerLink="/"><b>Admin</b>LTE</a>
+  </h1>
+
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Sign in to start your session</p>
+
+      <label class="visually-hidden" for="loginEmail">Email</label>
+      <div class="input-group mb-3">
+        <input id="loginEmail" type="email" class="form-control" placeholder="Email">
+        <div class="input-group-text">
+          <span class="bi bi-envelope"></span>
+        </div>
+      </div>
+
+      <label class="visually-hidden" for="loginPassword">Password</label>
+      <div class="input-group mb-3">
+        <input id="loginPassword" type="password" class="form-control" placeholder="Password">
+        <div class="input-group-text">
+          <span class="bi bi-lock-fill"></span>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-7">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault"> Remember Me </label>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="d-grid">
+            <button class="btn btn-primary" [routerLink]="['/admin']" routerLinkActive="router-link-active">Sign In</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="social-auth-links text-center mb-3 d-grid gap-2">
+        <p>- OR -</p>
+        <a href="#" class="btn btn-primary">
+          <i class="bi bi-facebook me-2"></i> Sign in using Facebook
+        </a>
+        <a href="#" class="btn btn-danger">
+          <i class="bi bi-google me-2"></i> Sign in using Google
+        </a>
+      </div>
+
+      <p class="mb-1">
+        <a href="#">I forgot my password</a>
+      </p>
+      <p class="mb-0">
+        <a href="#" class="text-center">Register a new membership</a>
+      </p>
+    </div>
+  </div>
+</main>
